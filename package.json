@@ -1,0 +1,29 @@
+{
+  "name": "movie-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon index.js",
+    "test": "env-cmd -f ./config/test.env jest --watchAll --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-validator": "^6.6.0",
+    "knex": "^0.21.2",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^26.2.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}
